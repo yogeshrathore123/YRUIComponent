@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB7C19282297F3EE00C7C837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19272297F3EE00C7C837 /* AppDelegate.swift */; };
+		AB7C192A2297F3EE00C7C837 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19292297F3EE00C7C837 /* CollectionViewController.swift */; };
+		AB7C192D2297F3EE00C7C837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7C192B2297F3EE00C7C837 /* Main.storyboard */; };
+		AB7C19302297F3EE00C7C837 /* YRUIComponent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB7C192E2297F3EE00C7C837 /* YRUIComponent.xcdatamodeld */; };
+		AB7C19322297F3EF00C7C837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7C19312297F3EF00C7C837 /* Assets.xcassets */; };
+		AB7C19352297F3EF00C7C837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7C19332297F3EF00C7C837 /* LaunchScreen.storyboard */; };
+		AB7C19402297F3EF00C7C837 /* YRUIComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C193F2297F3EF00C7C837 /* YRUIComponentTests.swift */; };
+		AB7C194B2297F3EF00C7C837 /* YRUIComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C194A2297F3EF00C7C837 /* YRUIComponentUITests.swift */; };
+		AB7C195A2297F48D00C7C837 /* YRCustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19592297F48D00C7C837 /* YRCustomSegmentedControl.swift */; };
+		AB7C195D2297F51100C7C837 /* YRCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C195C2297F51100C7C837 /* YRCardView.swift */; };
+		AB7C19602297F56400C7C837 /* YRCheckboxMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C195F2297F56400C7C837 /* YRCheckboxMenu.swift */; };
+		AB7C19632297F5DD00C7C837 /* YRPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19622297F5DD00C7C837 /* YRPopupView.swift */; };
+		AB7C19662297F72200C7C837 /* YRDateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19652297F72200C7C837 /* YRDateTimePicker.swift */; };
+		AB7C19692297F82000C7C837 /* YRDropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19682297F82000C7C837 /* YRDropDownItem.swift */; };
+		AB7C196B2297F84200C7C837 /* YRDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C196A2297F84200C7C837 /* YRDropDownView.swift */; };
+		AB7C196E2297F8F100C7C837 /* YRMenuBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C196D2297F8F100C7C837 /* YRMenuBaseViewController.swift */; };
+		AB7C19702297F96F00C7C837 /* YRMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C196F2297F96F00C7C837 /* YRMenuViewController.swift */; };
+		AB7C19732297FA0E00C7C837 /* YRParallaxTableHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19722297FA0E00C7C837 /* YRParallaxTableHeaderViewController.swift */; };
+		AB7C19762297FA7B00C7C837 /* YRRadioButtonGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19752297FA7B00C7C837 /* YRRadioButtonGroupView.swift */; };
+		AB7C19792297FB1600C7C837 /* YRRatingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19782297FB1600C7C837 /* YRRatingBar.swift */; };
+		AB7C197E2297FC2F00C7C837 /* YRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C197B2297FC2F00C7C837 /* YRTextField.swift */; };
+		AB7C197F2297FC2F00C7C837 /* YRTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7C197C2297FC2F00C7C837 /* YRTextField.xib */; };
+		AB7C198A229800D100C7C837 /* ValidatorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1985229800D100C7C837 /* ValidatorDictionary.swift */; };
+		AB7C198B229800D100C7C837 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1986229800D100C7C837 /* ValidationError.swift */; };
+		AB7C198C229800D100C7C837 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1987229800D100C7C837 /* Validatable.swift */; };
+		AB7C198D229800D100C7C837 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1988229800D100C7C837 /* Validator.swift */; };
+		AB7C198E229800D100C7C837 /* ValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1989229800D100C7C837 /* ValidationDelegate.swift */; };
+		AB7C19A3229800E500C7C837 /* ExactLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C198F229800E400C7C837 /* ExactLengthRule.swift */; };
+		AB7C19A4229800E500C7C837 /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1990229800E400C7C837 /* MaxLengthRule.swift */; };
+		AB7C19A5229800E500C7C837 /* IPV4Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1991229800E400C7C837 /* IPV4Rule.swift */; };
+		AB7C19A6229800E500C7C837 /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1992229800E400C7C837 /* ISBNRule.swift */; };
+		AB7C19A7229800E500C7C837 /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1993229800E400C7C837 /* PasswordRule.swift */; };
+		AB7C19A8229800E500C7C837 /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1994229800E400C7C837 /* MinLengthRule.swift */; };
+		AB7C19A9229800E500C7C837 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1995229800E400C7C837 /* RegexRule.swift */; };
+		AB7C19AA229800E500C7C837 /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1996229800E400C7C837 /* RequiredRule.swift */; };
+		AB7C19AB229800E500C7C837 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1997229800E400C7C837 /* ValidationRule.swift */; };
+		AB7C19AC229800E500C7C837 /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1998229800E400C7C837 /* AlphaRule.swift */; };
+		AB7C19AD229800E500C7C837 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C1999229800E400C7C837 /* FloatRule.swift */; };
+		AB7C19AE229800E500C7C837 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C199A229800E400C7C837 /* CharacterSetRule.swift */; };
+		AB7C19AF229800E500C7C837 /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C199B229800E400C7C837 /* FullNameRule.swift */; };
+		AB7C19B0229800E500C7C837 /* AlphaNumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C199C229800E400C7C837 /* AlphaNumericRule.swift */; };
+		AB7C19B1229800E500C7C837 /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C199D229800E400C7C837 /* ConfirmRule.swift */; };
+		AB7C19B2229800E500C7C837 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C199E229800E400C7C837 /* EmailRule.swift */; };
+		AB7C19B3229800E500C7C837 /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C199F229800E400C7C837 /* PhoneNumberRule.swift */; };
+		AB7C19B4229800E500C7C837 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19A0229800E400C7C837 /* Rule.swift */; };
+		AB7C19B5229800E500C7C837 /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19A1229800E500C7C837 /* ZipCodeRule.swift */; };
+		AB7C19B6229800E500C7C837 /* HexColorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19A2229800E500C7C837 /* HexColorRule.swift */; };
+		AB7C19BA2298043500C7C837 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19B92298043500C7C837 /* CollectionViewCell.swift */; };
+		AB7C19C5229810D300C7C837 /* TextFieldValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19BB229810D300C7C837 /* TextFieldValidationViewController.swift */; };
+		AB7C19C6229810D300C7C837 /* DateTimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19BC229810D300C7C837 /* DateTimePickerViewController.swift */; };
+		AB7C19C7229810D300C7C837 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19BD229810D300C7C837 /* CardViewController.swift */; };
+		AB7C19C8229810D300C7C837 /* TabSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19BE229810D300C7C837 /* TabSegmentedViewController.swift */; };
+		AB7C19C9229810D300C7C837 /* RadioButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19BF229810D300C7C837 /* RadioButtonViewController.swift */; };
+		AB7C19CA229810D300C7C837 /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19C0229810D300C7C837 /* ParallaxViewController.swift */; };
+		AB7C19CB229810D300C7C837 /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19C1229810D300C7C837 /* DropDownViewController.swift */; };
+		AB7C19CC229810D300C7C837 /* RatingBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19C2229810D300C7C837 /* RatingBarViewController.swift */; };
+		AB7C19CD229810D300C7C837 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19C3229810D300C7C837 /* SlideMenuViewController.swift */; };
+		AB7C19CE229810D300C7C837 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C19C4229810D300C7C837 /* CheckBoxViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB7C193C2297F3EF00C7C837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7C191C2297F3EE00C7C837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7C19232297F3EE00C7C837;
+			remoteInfo = YRUIComponent;
+		};
+		AB7C19472297F3EF00C7C837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7C191C2297F3EE00C7C837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7C19232297F3EE00C7C837;
+			remoteInfo = YRUIComponent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB7C19242297F3EE00C7C837 /* YRUIComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRUIComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7C19272297F3EE00C7C837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB7C19292297F3EE00C7C837 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		AB7C192C2297F3EE00C7C837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB7C192F2297F3EE00C7C837 /* YRUIComponent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YRUIComponent.xcdatamodel; sourceTree = "<group>"; };
+		AB7C19312297F3EF00C7C837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB7C19342297F3EF00C7C837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB7C19362297F3EF00C7C837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7C193B2297F3EF00C7C837 /* YRUIComponentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YRUIComponentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7C193F2297F3EF00C7C837 /* YRUIComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRUIComponentTests.swift; sourceTree = "<group>"; };
+		AB7C19412297F3EF00C7C837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7C19462297F3EF00C7C837 /* YRUIComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YRUIComponentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7C194A2297F3EF00C7C837 /* YRUIComponentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRUIComponentUITests.swift; sourceTree = "<group>"; };
+		AB7C194C2297F3EF00C7C837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7C19592297F48D00C7C837 /* YRCustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRCustomSegmentedControl.swift; sourceTree = "<group>"; };
+		AB7C195C2297F51100C7C837 /* YRCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRCardView.swift; sourceTree = "<group>"; };
+		AB7C195F2297F56400C7C837 /* YRCheckboxMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRCheckboxMenu.swift; sourceTree = "<group>"; };
+		AB7C19622297F5DD00C7C837 /* YRPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRPopupView.swift; sourceTree = "<group>"; };
+		AB7C19652297F72200C7C837 /* YRDateTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRDateTimePicker.swift; sourceTree = "<group>"; };
+		AB7C19682297F82000C7C837 /* YRDropDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRDropDownItem.swift; sourceTree = "<group>"; };
+		AB7C196A2297F84200C7C837 /* YRDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRDropDownView.swift; sourceTree = "<group>"; };
+		AB7C196D2297F8F100C7C837 /* YRMenuBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRMenuBaseViewController.swift; sourceTree = "<group>"; };
+		AB7C196F2297F96F00C7C837 /* YRMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRMenuViewController.swift; sourceTree = "<group>"; };
+		AB7C19722297FA0E00C7C837 /* YRParallaxTableHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRParallaxTableHeaderViewController.swift; sourceTree = "<group>"; };
+		AB7C19752297FA7B00C7C837 /* YRRadioButtonGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRRadioButtonGroupView.swift; sourceTree = "<group>"; };
+		AB7C19782297FB1600C7C837 /* YRRatingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRRatingBar.swift; sourceTree = "<group>"; };
+		AB7C197B2297FC2F00C7C837 /* YRTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRTextField.swift; sourceTree = "<group>"; };
+		AB7C197C2297FC2F00C7C837 /* YRTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRTextField.xib; sourceTree = "<group>"; };
+		AB7C1985229800D100C7C837 /* ValidatorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorDictionary.swift; sourceTree = "<group>"; };
+		AB7C1986229800D100C7C837 /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		AB7C1987229800D100C7C837 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		AB7C1988229800D100C7C837 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		AB7C1989229800D100C7C837 /* ValidationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationDelegate.swift; sourceTree = "<group>"; };
+		AB7C198F229800E400C7C837 /* ExactLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactLengthRule.swift; sourceTree = "<group>"; };
+		AB7C1990229800E400C7C837 /* MaxLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthRule.swift; sourceTree = "<group>"; };
+		AB7C1991229800E400C7C837 /* IPV4Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPV4Rule.swift; sourceTree = "<group>"; };
+		AB7C1992229800E400C7C837 /* ISBNRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNRule.swift; sourceTree = "<group>"; };
+		AB7C1993229800E400C7C837 /* PasswordRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
+		AB7C1994229800E400C7C837 /* MinLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinLengthRule.swift; sourceTree = "<group>"; };
+		AB7C1995229800E400C7C837 /* RegexRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		AB7C1996229800E400C7C837 /* RequiredRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredRule.swift; sourceTree = "<group>"; };
+		AB7C1997229800E400C7C837 /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
+		AB7C1998229800E400C7C837 /* AlphaRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaRule.swift; sourceTree = "<group>"; };
+		AB7C1999229800E400C7C837 /* FloatRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRule.swift; sourceTree = "<group>"; };
+		AB7C199A229800E400C7C837 /* CharacterSetRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetRule.swift; sourceTree = "<group>"; };
+		AB7C199B229800E400C7C837 /* FullNameRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullNameRule.swift; sourceTree = "<group>"; };
+		AB7C199C229800E400C7C837 /* AlphaNumericRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaNumericRule.swift; sourceTree = "<group>"; };
+		AB7C199D229800E400C7C837 /* ConfirmRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmRule.swift; sourceTree = "<group>"; };
+		AB7C199E229800E400C7C837 /* EmailRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
+		AB7C199F229800E400C7C837 /* PhoneNumberRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberRule.swift; sourceTree = "<group>"; };
+		AB7C19A0229800E400C7C837 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		AB7C19A1229800E500C7C837 /* ZipCodeRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeRule.swift; sourceTree = "<group>"; };
+		AB7C19A2229800E500C7C837 /* HexColorRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorRule.swift; sourceTree = "<group>"; };
+		AB7C19B92298043500C7C837 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AB7C19BB229810D300C7C837 /* TextFieldValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldValidationViewController.swift; sourceTree = "<group>"; };
+		AB7C19BC229810D300C7C837 /* DateTimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimePickerViewController.swift; sourceTree = "<group>"; };
+		AB7C19BD229810D300C7C837 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		AB7C19BE229810D300C7C837 /* TabSegmentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSegmentedViewController.swift; sourceTree = "<group>"; };
+		AB7C19BF229810D300C7C837 /* RadioButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonViewController.swift; sourceTree = "<group>"; };
+		AB7C19C0229810D300C7C837 /* ParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
+		AB7C19C1229810D300C7C837 /* DropDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
+		AB7C19C2229810D300C7C837 /* RatingBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingBarViewController.swift; sourceTree = "<group>"; };
+		AB7C19C3229810D300C7C837 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		AB7C19C4229810D300C7C837 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB7C19212297F3EE00C7C837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C19382297F3EF00C7C837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C19432297F3EF00C7C837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB7C191B2297F3EE00C7C837 = {
+			isa = PBXGroup;
+			children = (
+				AB7C19262297F3EE00C7C837 /* YRUIComponent */,
+				AB7C193E2297F3EF00C7C837 /* YRUIComponentTests */,
+				AB7C19492297F3EF00C7C837 /* YRUIComponentUITests */,
+				AB7C19252297F3EE00C7C837 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB7C19252297F3EE00C7C837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19242297F3EE00C7C837 /* YRUIComponent.app */,
+				AB7C193B2297F3EF00C7C837 /* YRUIComponentTests.xctest */,
+				AB7C19462297F3EF00C7C837 /* YRUIComponentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7C19262297F3EE00C7C837 /* YRUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19582297F41300C7C837 /* CustomSegmentControl */,
+				AB7C195B2297F4EF00C7C837 /* CardView */,
+				AB7C195E2297F51F00C7C837 /* Checkbox */,
+				AB7C19612297F5BD00C7C837 /* PopupView */,
+				AB7C19642297F69900C7C837 /* DateTimePicker */,
+				AB7C19672297F7C500C7C837 /* DropDown */,
+				AB7C197A2297FB9600C7C837 /* TextFieldValidation */,
+				AB7C19772297FAE100C7C837 /* RatingBar */,
+				AB7C19742297FA5100C7C837 /* RadioButton */,
+				AB7C19712297F9E300C7C837 /* ParallaxHeader */,
+				AB7C196C2297F8CB00C7C837 /* SlideMenu */,
+				AB7C19B7229801F700C7C837 /* Controller */,
+				AB7C19B82298023500C7C837 /* View */,
+				AB7C19272297F3EE00C7C837 /* AppDelegate.swift */,
+				AB7C19362297F3EF00C7C837 /* Info.plist */,
+				AB7C192E2297F3EE00C7C837 /* YRUIComponent.xcdatamodeld */,
+			);
+			path = YRUIComponent;
+			sourceTree = "<group>";
+		};
+		AB7C193E2297F3EF00C7C837 /* YRUIComponentTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C193F2297F3EF00C7C837 /* YRUIComponentTests.swift */,
+				AB7C19412297F3EF00C7C837 /* Info.plist */,
+			);
+			path = YRUIComponentTests;
+			sourceTree = "<group>";
+		};
+		AB7C19492297F3EF00C7C837 /* YRUIComponentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C194A2297F3EF00C7C837 /* YRUIComponentUITests.swift */,
+				AB7C194C2297F3EF00C7C837 /* Info.plist */,
+			);
+			path = YRUIComponentUITests;
+			sourceTree = "<group>";
+		};
+		AB7C19582297F41300C7C837 /* CustomSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19592297F48D00C7C837 /* YRCustomSegmentedControl.swift */,
+			);
+			path = CustomSegmentControl;
+			sourceTree = "<group>";
+		};
+		AB7C195B2297F4EF00C7C837 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C195C2297F51100C7C837 /* YRCardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		AB7C195E2297F51F00C7C837 /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C195F2297F56400C7C837 /* YRCheckboxMenu.swift */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		AB7C19612297F5BD00C7C837 /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19622297F5DD00C7C837 /* YRPopupView.swift */,
+			);
+			path = PopupView;
+			sourceTree = "<group>";
+		};
+		AB7C19642297F69900C7C837 /* DateTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19652297F72200C7C837 /* YRDateTimePicker.swift */,
+			);
+			path = DateTimePicker;
+			sourceTree = "<group>";
+		};
+		AB7C19672297F7C500C7C837 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19682297F82000C7C837 /* YRDropDownItem.swift */,
+				AB7C196A2297F84200C7C837 /* YRDropDownView.swift */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		AB7C196C2297F8CB00C7C837 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C196D2297F8F100C7C837 /* YRMenuBaseViewController.swift */,
+				AB7C196F2297F96F00C7C837 /* YRMenuViewController.swift */,
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
+		AB7C19712297F9E300C7C837 /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19722297FA0E00C7C837 /* YRParallaxTableHeaderViewController.swift */,
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		AB7C19742297FA5100C7C837 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19752297FA7B00C7C837 /* YRRadioButtonGroupView.swift */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
+		AB7C19772297FAE100C7C837 /* RatingBar */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19782297FB1600C7C837 /* YRRatingBar.swift */,
+			);
+			path = RatingBar;
+			sourceTree = "<group>";
+		};
+		AB7C197A2297FB9600C7C837 /* TextFieldValidation */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C197B2297FC2F00C7C837 /* YRTextField.swift */,
+				AB7C197C2297FC2F00C7C837 /* YRTextField.xib */,
+				AB7C19822298008700C7C837 /* SwiftValidators */,
+			);
+			path = TextFieldValidation;
+			sourceTree = "<group>";
+		};
+		AB7C19822298008700C7C837 /* SwiftValidators */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C1984229800B400C7C837 /* Rule */,
+				AB7C1983229800AB00C7C837 /* Core */,
+			);
+			path = SwiftValidators;
+			sourceTree = "<group>";
+		};
+		AB7C1983229800AB00C7C837 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C1987229800D100C7C837 /* Validatable.swift */,
+				AB7C1989229800D100C7C837 /* ValidationDelegate.swift */,
+				AB7C1986229800D100C7C837 /* ValidationError.swift */,
+				AB7C1988229800D100C7C837 /* Validator.swift */,
+				AB7C1985229800D100C7C837 /* ValidatorDictionary.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AB7C1984229800B400C7C837 /* Rule */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C199C229800E400C7C837 /* AlphaNumericRule.swift */,
+				AB7C1998229800E400C7C837 /* AlphaRule.swift */,
+				AB7C199A229800E400C7C837 /* CharacterSetRule.swift */,
+				AB7C199D229800E400C7C837 /* ConfirmRule.swift */,
+				AB7C199E229800E400C7C837 /* EmailRule.swift */,
+				AB7C198F229800E400C7C837 /* ExactLengthRule.swift */,
+				AB7C1999229800E400C7C837 /* FloatRule.swift */,
+				AB7C199B229800E400C7C837 /* FullNameRule.swift */,
+				AB7C19A2229800E500C7C837 /* HexColorRule.swift */,
+				AB7C1991229800E400C7C837 /* IPV4Rule.swift */,
+				AB7C1992229800E400C7C837 /* ISBNRule.swift */,
+				AB7C1990229800E400C7C837 /* MaxLengthRule.swift */,
+				AB7C1994229800E400C7C837 /* MinLengthRule.swift */,
+				AB7C1993229800E400C7C837 /* PasswordRule.swift */,
+				AB7C199F229800E400C7C837 /* PhoneNumberRule.swift */,
+				AB7C1995229800E400C7C837 /* RegexRule.swift */,
+				AB7C1996229800E400C7C837 /* RequiredRule.swift */,
+				AB7C19A0229800E400C7C837 /* Rule.swift */,
+				AB7C1997229800E400C7C837 /* ValidationRule.swift */,
+				AB7C19A1229800E500C7C837 /* ZipCodeRule.swift */,
+			);
+			path = Rule;
+			sourceTree = "<group>";
+		};
+		AB7C19B7229801F700C7C837 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19BD229810D300C7C837 /* CardViewController.swift */,
+				AB7C19C4229810D300C7C837 /* CheckBoxViewController.swift */,
+				AB7C19BC229810D300C7C837 /* DateTimePickerViewController.swift */,
+				AB7C19C1229810D300C7C837 /* DropDownViewController.swift */,
+				AB7C19C0229810D300C7C837 /* ParallaxViewController.swift */,
+				AB7C19BF229810D300C7C837 /* RadioButtonViewController.swift */,
+				AB7C19C2229810D300C7C837 /* RatingBarViewController.swift */,
+				AB7C19C3229810D300C7C837 /* SlideMenuViewController.swift */,
+				AB7C19BE229810D300C7C837 /* TabSegmentedViewController.swift */,
+				AB7C19BB229810D300C7C837 /* TextFieldValidationViewController.swift */,
+				AB7C19292297F3EE00C7C837 /* CollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB7C19B82298023500C7C837 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C19332297F3EF00C7C837 /* LaunchScreen.storyboard */,
+				AB7C19312297F3EF00C7C837 /* Assets.xcassets */,
+				AB7C192B2297F3EE00C7C837 /* Main.storyboard */,
+				AB7C19B92298043500C7C837 /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB7C19232297F3EE00C7C837 /* YRUIComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7C194F2297F3EF00C7C837 /* Build configuration list for PBXNativeTarget "YRUIComponent" */;
+			buildPhases = (
+				AB7C19202297F3EE00C7C837 /* Sources */,
+				AB7C19212297F3EE00C7C837 /* Frameworks */,
+				AB7C19222297F3EE00C7C837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YRUIComponent;
+			productName = YRUIComponent;
+			productReference = AB7C19242297F3EE00C7C837 /* YRUIComponent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB7C193A2297F3EF00C7C837 /* YRUIComponentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7C19522297F3EF00C7C837 /* Build configuration list for PBXNativeTarget "YRUIComponentTests" */;
+			buildPhases = (
+				AB7C19372297F3EF00C7C837 /* Sources */,
+				AB7C19382297F3EF00C7C837 /* Frameworks */,
+				AB7C19392297F3EF00C7C837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7C193D2297F3EF00C7C837 /* PBXTargetDependency */,
+			);
+			name = YRUIComponentTests;
+			productName = YRUIComponentTests;
+			productReference = AB7C193B2297F3EF00C7C837 /* YRUIComponentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB7C19452297F3EF00C7C837 /* YRUIComponentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7C19552297F3EF00C7C837 /* Build configuration list for PBXNativeTarget "YRUIComponentUITests" */;
+			buildPhases = (
+				AB7C19422297F3EF00C7C837 /* Sources */,
+				AB7C19432297F3EF00C7C837 /* Frameworks */,
+				AB7C19442297F3EF00C7C837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7C19482297F3EF00C7C837 /* PBXTargetDependency */,
+			);
+			name = YRUIComponentUITests;
+			productName = YRUIComponentUITests;
+			productReference = AB7C19462297F3EF00C7C837 /* YRUIComponentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7C191C2297F3EE00C7C837 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yogesh Rathore";
+				TargetAttributes = {
+					AB7C19232297F3EE00C7C837 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					AB7C193A2297F3EF00C7C837 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AB7C19232297F3EE00C7C837;
+					};
+					AB7C19452297F3EF00C7C837 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AB7C19232297F3EE00C7C837;
+					};
+				};
+			};
+			buildConfigurationList = AB7C191F2297F3EE00C7C837 /* Build configuration list for PBXProject "YRUIComponent" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB7C191B2297F3EE00C7C837;
+			productRefGroup = AB7C19252297F3EE00C7C837 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB7C19232297F3EE00C7C837 /* YRUIComponent */,
+				AB7C193A2297F3EF00C7C837 /* YRUIComponentTests */,
+				AB7C19452297F3EF00C7C837 /* YRUIComponentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB7C19222297F3EE00C7C837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C197F2297FC2F00C7C837 /* YRTextField.xib in Resources */,
+				AB7C19352297F3EF00C7C837 /* LaunchScreen.storyboard in Resources */,
+				AB7C19322297F3EF00C7C837 /* Assets.xcassets in Resources */,
+				AB7C192D2297F3EE00C7C837 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C19392297F3EF00C7C837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C19442297F3EF00C7C837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB7C19202297F3EE00C7C837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C198C229800D100C7C837 /* Validatable.swift in Sources */,
+				AB7C19A9229800E500C7C837 /* RegexRule.swift in Sources */,
+				AB7C19AE229800E500C7C837 /* CharacterSetRule.swift in Sources */,
+				AB7C197E2297FC2F00C7C837 /* YRTextField.swift in Sources */,
+				AB7C19AA229800E500C7C837 /* RequiredRule.swift in Sources */,
+				AB7C19702297F96F00C7C837 /* YRMenuViewController.swift in Sources */,
+				AB7C19792297FB1600C7C837 /* YRRatingBar.swift in Sources */,
+				AB7C195A2297F48D00C7C837 /* YRCustomSegmentedControl.swift in Sources */,
+				AB7C19A6229800E500C7C837 /* ISBNRule.swift in Sources */,
+				AB7C19A3229800E500C7C837 /* ExactLengthRule.swift in Sources */,
+				AB7C19CB229810D300C7C837 /* DropDownViewController.swift in Sources */,
+				AB7C19B5229800E500C7C837 /* ZipCodeRule.swift in Sources */,
+				AB7C192A2297F3EE00C7C837 /* CollectionViewController.swift in Sources */,
+				AB7C19B3229800E500C7C837 /* PhoneNumberRule.swift in Sources */,
+				AB7C198B229800D100C7C837 /* ValidationError.swift in Sources */,
+				AB7C19762297FA7B00C7C837 /* YRRadioButtonGroupView.swift in Sources */,
+				AB7C19C5229810D300C7C837 /* TextFieldValidationViewController.swift in Sources */,
+				AB7C19AB229800E500C7C837 /* ValidationRule.swift in Sources */,
+				AB7C196B2297F84200C7C837 /* YRDropDownView.swift in Sources */,
+				AB7C19692297F82000C7C837 /* YRDropDownItem.swift in Sources */,
+				AB7C19602297F56400C7C837 /* YRCheckboxMenu.swift in Sources */,
+				AB7C19A5229800E500C7C837 /* IPV4Rule.swift in Sources */,
+				AB7C19732297FA0E00C7C837 /* YRParallaxTableHeaderViewController.swift in Sources */,
+				AB7C19AF229800E500C7C837 /* FullNameRule.swift in Sources */,
+				AB7C19C9229810D300C7C837 /* RadioButtonViewController.swift in Sources */,
+				AB7C19C7229810D300C7C837 /* CardViewController.swift in Sources */,
+				AB7C198D229800D100C7C837 /* Validator.swift in Sources */,
+				AB7C19632297F5DD00C7C837 /* YRPopupView.swift in Sources */,
+				AB7C19B6229800E500C7C837 /* HexColorRule.swift in Sources */,
+				AB7C198E229800D100C7C837 /* ValidationDelegate.swift in Sources */,
+				AB7C19C6229810D300C7C837 /* DateTimePickerViewController.swift in Sources */,
+				AB7C195D2297F51100C7C837 /* YRCardView.swift in Sources */,
+				AB7C19A8229800E500C7C837 /* MinLengthRule.swift in Sources */,
+				AB7C19CE229810D300C7C837 /* CheckBoxViewController.swift in Sources */,
+				AB7C19302297F3EE00C7C837 /* YRUIComponent.xcdatamodeld in Sources */,
+				AB7C19AD229800E500C7C837 /* FloatRule.swift in Sources */,
+				AB7C19A7229800E500C7C837 /* PasswordRule.swift in Sources */,
+				AB7C19AC229800E500C7C837 /* AlphaRule.swift in Sources */,
+				AB7C19CD229810D300C7C837 /* SlideMenuViewController.swift in Sources */,
+				AB7C19282297F3EE00C7C837 /* AppDelegate.swift in Sources */,
+				AB7C19B1229800E500C7C837 /* ConfirmRule.swift in Sources */,
+				AB7C19B0229800E500C7C837 /* AlphaNumericRule.swift in Sources */,
+				AB7C19A4229800E500C7C837 /* MaxLengthRule.swift in Sources */,
+				AB7C19662297F72200C7C837 /* YRDateTimePicker.swift in Sources */,
+				AB7C196E2297F8F100C7C837 /* YRMenuBaseViewController.swift in Sources */,
+				AB7C19CC229810D300C7C837 /* RatingBarViewController.swift in Sources */,
+				AB7C19BA2298043500C7C837 /* CollectionViewCell.swift in Sources */,
+				AB7C19CA229810D300C7C837 /* ParallaxViewController.swift in Sources */,
+				AB7C19C8229810D300C7C837 /* TabSegmentedViewController.swift in Sources */,
+				AB7C19B4229800E500C7C837 /* Rule.swift in Sources */,
+				AB7C19B2229800E500C7C837 /* EmailRule.swift in Sources */,
+				AB7C198A229800D100C7C837 /* ValidatorDictionary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C19372297F3EF00C7C837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C19402297F3EF00C7C837 /* YRUIComponentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C19422297F3EF00C7C837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C194B2297F3EF00C7C837 /* YRUIComponentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB7C193D2297F3EF00C7C837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7C19232297F3EE00C7C837 /* YRUIComponent */;
+			targetProxy = AB7C193C2297F3EF00C7C837 /* PBXContainerItemProxy */;
+		};
+		AB7C19482297F3EF00C7C837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7C19232297F3EE00C7C837 /* YRUIComponent */;
+			targetProxy = AB7C19472297F3EF00C7C837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB7C192B2297F3EE00C7C837 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7C192C2297F3EE00C7C837 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB7C19332297F3EF00C7C837 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7C19342297F3EF00C7C837 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB7C194D2297F3EF00C7C837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB7C194E2297F3EF00C7C837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB7C19502297F3EF00C7C837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YRUIComponent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogesh.YRUIComponent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB7C19512297F3EF00C7C837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YRUIComponent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogesh.YRUIComponent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB7C19532297F3EF00C7C837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YRUIComponentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogesh.YRUIComponentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YRUIComponent.app/YRUIComponent";
+			};
+			name = Debug;
+		};
+		AB7C19542297F3EF00C7C837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YRUIComponentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogesh.YRUIComponentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YRUIComponent.app/YRUIComponent";
+			};
+			name = Release;
+		};
+		AB7C19562297F3EF00C7C837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YRUIComponentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogesh.YRUIComponentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YRUIComponent;
+			};
+			name = Debug;
+		};
+		AB7C19572297F3EF00C7C837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YRUIComponentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogesh.YRUIComponentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YRUIComponent;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB7C191F2297F3EE00C7C837 /* Build configuration list for PBXProject "YRUIComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C194D2297F3EF00C7C837 /* Debug */,
+				AB7C194E2297F3EF00C7C837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7C194F2297F3EF00C7C837 /* Build configuration list for PBXNativeTarget "YRUIComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C19502297F3EF00C7C837 /* Debug */,
+				AB7C19512297F3EF00C7C837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7C19522297F3EF00C7C837 /* Build configuration list for PBXNativeTarget "YRUIComponentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C19532297F3EF00C7C837 /* Debug */,
+				AB7C19542297F3EF00C7C837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7C19552297F3EF00C7C837 /* Build configuration list for PBXNativeTarget "YRUIComponentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C19562297F3EF00C7C837 /* Debug */,
+				AB7C19572297F3EF00C7C837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB7C192E2297F3EE00C7C837 /* YRUIComponent.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB7C192F2297F3EE00C7C837 /* YRUIComponent.xcdatamodel */,
+			);
+			currentVersion = AB7C192F2297F3EE00C7C837 /* YRUIComponent.xcdatamodel */;
+			path = YRUIComponent.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB7C191C2297F3EE00C7C837 /* Project object */;
+}
